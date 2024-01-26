@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@0.7.4/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>YMovies - Movies</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+          <img class="logo" src="ymovies.png" alt="">
+        <a class="navbar-brand" href="/">YMovies</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/movies.html">Movies</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Category
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/franchise.html">Franchise</a></li>
+                <li><a class="dropdown-item" href="/movies.html">Movies</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/goldmines.html">Goldmines</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search Any Movie" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  <div id="main1">
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Trending</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://m.media-amazon.com/images/M/MV5BZDI4OTM1ZjMtOWQxMC00OTY5LTg3NjQtMjlhMWVjODFlYTY4XkEyXkFqcGdeQXVyMTYzMTU3Njgx._V1_.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">12th Fail</h2>
+                <p class="leading-relaxed text-base">Trending</p>
+                <div class="flex justify-center">
+                    <button onclick="watch1()" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Watch</button>
+                    <button onclick="watch1()" class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+                  </div>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/90/Animal_%282023_film%29_poster.jpg/220px-Animal_%282023_film%29_poster.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Animal</h2>
+                <p class="leading-relaxed text-base">Trending</p>
+                <div class="flex justify-center">
+                    <button onclick="watch2()" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Watch</button>
+                    <button onclick="watch2()" class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+                  </div>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://upload.wikimedia.org/wikipedia/en/f/f8/Tiger_3_poster.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Tiger 3</h2>
+                <p class="leading-relaxed text-base">Trending</p>
+                <div class="flex justify-center">
+                    <button onclick="watch3()" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Watch</button>
+                    <button onclick="watch3()" class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+                  </div>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Oppenheimer</h2>
+                <p class="leading-relaxed text-base">Trending</p>
+                <div class="flex justify-center">
+                    <button onclick="watch4()" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Watch</button>
+                    <button onclick="watch4()" class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Comedy</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://m.media-amazon.com/images/M/MV5BNDExMTBlZTYtZWMzYi00NmEwLWEzZGYtOTA1MDhmNTc0ODZkXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Hera Pheri</h2>
+                <p class="leading-relaxed text-base">Comedy</p>
+                <div class="flex justify-center">
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"><a href="https://www.youtube.com/watch?v=TIQ5hrfermg" target="_blank">Watch</a></button>
+                  </div>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://m.media-amazon.com/images/M/MV5BZmMwOGFkYzgtODY0ZC00ZDJiLWE5MDUtNWFjNWEyZWMxMTM1XkEyXkFqcGdeQXVyMTMzNzIyNDc1._V1_.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Selfie</h2>
+                <p class="leading-relaxed text-base">Comedy</p>
+                <div class="flex justify-center">
+                    <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Watch</button>
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+                  </div>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://m.media-amazon.com/images/M/MV5BMjMwOTk3ZTYtMTc4Zi00NDFiLWFlZGMtNTVkMTU3MDY1MjU4XkEyXkFqcGdeQXVyOTI3MzI4MzA@._V1_.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Fukrey 3</h2>
+                <p class="leading-relaxed text-base">Comedy</p>
+                <div class="flex justify-center">
+                    <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Watch</button>
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+                  </div>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://m.media-amazon.com/images/M/MV5BNzgzYjZjYzMtNjcyYy00NWI3LTg1NDItOTMzMzdhMjhjNWExXkEyXkFqcGdeQXVyNjA3OTI5MjA@._V1_.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Phir Hera Pheri</h2>
+                <p class="leading-relaxed text-base">Comedy</p>
+                <div class="flex justify-center">
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"><a href="https://www.youtube.com/watch?v=f3TmFbQVPn8" target="_blank">Watch</a></button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Superhero</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Avengers Endgame</h2>
+                <p class="leading-relaxed text-base">Superhero</p>
+                <div class="flex justify-center">
+                    <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Watch</button>
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+                  </div>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://m.media-amazon.com/images/M/MV5BZWMyYzFjYTYtNTRjYi00OGExLWE2YzgtOGRmYjAxZTU3NzBiXkEyXkFqcGdeQXVyMzQ0MzA0NTM@._V1_FMjpg_UX1000_.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Spider Man No Way Home</h2>
+                <p class="leading-relaxed text-base">Superhero</p>
+                <div class="flex justify-center">
+                    <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Watch</button>
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+                  </div>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://m.media-amazon.com/images/M/MV5BMDgxOTdjMzYtZGQxMS00ZTAzLWI4Y2UtMTQzN2VlYjYyZWRiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Gaurdians Of The Galaxy Volume 3</h2>
+                <p class="leading-relaxed text-base">Superhero</p>
+                <div class="flex justify-center">
+                    <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Watch</button>
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+                  </div>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://m.media-amazon.com/images/M/MV5BODZhNzlmOGItMWUyYS00Y2Q5LWFlNzMtM2I2NDFkM2ZkYmE1XkEyXkFqcGdeQXVyMTU5OTA4NTIz._V1_FMjpg_UX1000_.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Ant Man And The Wasp Quantumania</h2>
+                <p class="leading-relaxed text-base">Superhero</p>
+                <div class="flex justify-center">
+                    <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Watch</button>
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      \<section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Action</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://m.media-amazon.com/images/M/MV5BMmU4ZTM0MTctZTQ3Ny00YjZmLWFhNzEtOGYzMDk0ZjcyNmYzXkEyXkFqcGdeQXVyMTUyNjIwMDEw._V1_FMjpg_UX1000_.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Salaar</h2>
+                <p class="leading-relaxed text-base">Action</p>
+                <div class="flex justify-center">
+                    <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Watch</button>
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+                  </div>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://upload.wikimedia.org/wikipedia/en/3/39/Jawan_film_poster.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Jawaan</h2>
+                <p class="leading-relaxed text-base">Action</p>
+                <div class="flex justify-center">
+                    <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Watch</button>
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+                  </div>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://m.media-amazon.com/images/M/MV5BZDk1NWU5MjMtOWY4Zi00YWJhLTlkMDUtYjllMjQwZWE3OGU2XkEyXkFqcGdeQXVyMTY4MjU0NDY3._V1_.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">IB 71</h2>
+                <p class="leading-relaxed text-base">Action</p>
+                <div class="flex justify-center">
+                    <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Watch</button>
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+                  </div>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://m.media-amazon.com/images/M/MV5BYTYwYmI0NGItYmFkYi00NzViLWIwMGEtNGNjYjQwYjY1NTQ1XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Mission Majnu</h2>
+                <p class="leading-relaxed text-base">Action</p>
+                <div class="flex justify-center">
+                    <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Watch</button>
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Motivational</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://m.media-amazon.com/images/M/MV5BYTQ4MDYyZjctZDRmOS00NWYyLTg2MzAtMGZlYzlkYjA1ZTY3XkEyXkFqcGdeQXVyODk2ODI3MTU@._V1_.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Guru</h2>
+                <p class="leading-relaxed text-base">Motivational</p>
+                <div class="flex justify-center">
+                    <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Watch</button>
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+                  </div>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://m.media-amazon.com/images/M/MV5BNTkyOGVjMGEtNmQzZi00NzFlLTlhOWQtODYyMDc2ZGJmYzFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">3 Idiots</h2>
+                <p class="leading-relaxed text-base">Motiovational</p>
+                <div class="flex justify-center">
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"><a href="https://www.youtube.com/watch?v=bItFNSeXHwM" target="_blank">Watch</a></button>
+                  </div>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://upload.wikimedia.org/wikipedia/en/6/66/Lakshya.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Lakshya</h2>
+                <p class="leading-relaxed text-base">Motivational</p>
+                <div class="flex justify-center">
+                    <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Watch</button>
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+                  </div>
+              </div>
+            </div>
+            <div class="xl:w-1/4 md:w-1/2 p-4">
+              <div class="bg-gray-100 p-6 rounded-lg">
+                <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://upload.wikimedia.org/wikipedia/en/b/b7/Mission_Mangal.jpg" alt="content">
+                <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">Movie</h3>
+                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Mission Mangal</h2>
+                <p class="leading-relaxed text-base">Motivational</p>
+                <div class="flex justify-center">
+                    <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Watch</button>
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+  <div id="main2">
+    <section class="text-gray-600 body-font">
+      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+          <img class="object-cover object-center rounded" alt="hero" id="hero" src="">
+        </div>
+        <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+          <h1 id="movie_name" class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+          </h1>
+          <div class="flex justify-center">
+            <button id="movie" class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Watch</button>
+            <button onclick="back()" class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Back</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
